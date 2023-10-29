@@ -3,13 +3,14 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
-    "build": "ng build",
-    "watch": "ng build --watch --configuration development",
-    "test": "ng test",
-    "storybook": "ng run design-system-impl-material:storybook",
-    "build-storybook": "ng run design-system-impl-material:build-storybook",
-    "build:tokens": "style-dictionary build"
+    "start": "nx serve",
+    "build": "nx build",
+    "watch": "nx build --watch --configuration development",
+    "test": "nx test",
+    "storybook": "nx run design-system-impl-material:storybook",
+    "build-storybook": "nx run design-system-impl-material:build-storybook",
+    "build:tokens": "style-dictionary build",
+    "chromatic": "npx chromatic --project-token=chpt_2a25713077f0a16"
   },
   "private": true,
   "dependencies": {
@@ -29,9 +30,14 @@
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "^16.1.0",
+    "@angular-devkit/core": "~16.1.0",
+    "@angular-devkit/schematics": "~16.1.0",
     "@angular/cli": "~16.1.0",
     "@angular/compiler-cli": "^16.1.1",
     "@compodoc/compodoc": "^1.1.21",
+    "@nx/angular": "16.9.0",
+    "@nx/workspace": "16.9.0",
+    "@schematics/angular": "~16.1.0",
     "@storybook/addon-docs": "^7.1.1",
     "@storybook/addon-essentials": "^7.1.1",
     "@storybook/addon-interactions": "^7.1.1",
@@ -41,16 +47,21 @@
     "@storybook/testing-library": "^0.2.0",
     "@types/figma": "^1.0.4",
     "@types/jasmine": "~4.3.0",
+    "chromatic": "^7.2.0",
     "jasmine-core": "~4.6.0",
     "karma": "~6.4.0",
     "karma-chrome-launcher": "~3.2.0",
     "karma-coverage": "~2.2.0",
     "karma-jasmine": "~5.1.0",
     "karma-jasmine-html-reporter": "~2.0.0",
+    "nx": "16.9.0",
+    "nx-cloud": "latest",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "storybook": "^7.1.1",
     "style-dictionary": "^3.8.0",
     "typescript": "~5.0.2"
-  }
+  },
+  "readme": "ERROR: No README data found!",
+  "_id": "design-system-impl-material@0.0.0"
 }
